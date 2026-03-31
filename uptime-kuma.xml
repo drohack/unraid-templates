@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<PluginURL>https://raw.githubusercontent.com/drohack/UptimeKumaPlugin/main/uptime-kuma.plg</PluginURL>
+<PluginAuthor>drohack</PluginAuthor>
+<Beta>False</Beta>
+<Category>Tools:</Category>
+<Name>Uptime Kuma Dashboard Widget</Name>
+<Description>
+Displays Uptime Kuma monitor statuses directly on the Unraid dashboard with heartbeat bars, uptime percentages, and configurable time periods (1h to 180 days). Reads the Uptime Kuma SQLite database in read-only mode - no API keys or background services needed. Choose which monitors to display, quick link to Uptime Kuma WebUI, and native Unraid dashboard tile styling. Supports both Uptime Kuma v1.x and v2.x (auto-detected).
+</Description>
+<Overview>
+Displays Uptime Kuma monitor statuses directly on the Unraid dashboard with heartbeat bars, uptime percentages, and configurable time periods. Supports v1.x and v2.x.
+</Overview>
+<Support>https://forums.unraid.net/topic/198044-plugin-uptime-kuma-monitor-widget-for-unraid-dashboard/</Support>
+<Project>https://github.com/drohack/UptimeKumaPlugin</Project>
+<Icon>https://raw.githubusercontent.com/drohack/UptimeKumaPlugin/main/src/uptime-kuma/usr/local/emhttp/plugins/uptime-kuma/images/icon.svg</Icon>
+<IconFA>heartbeat</IconFA>
+<License>MIT</License>
+<MinVer>6.11.0</MinVer>
+</Containers>
