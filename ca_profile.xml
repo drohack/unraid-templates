@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Profiles>
+  <Profile>
+**drohack's Unraid templates**
+
+Self-hosted tools for the Plex / *arr homelab stack:
+
+- **Keeparr** — a web app where everyone on your media server votes on what to *keep*; it reports what's safe to delete, and never deletes anything itself.
+- **Uptime Kuma Dashboard Widget** — Uptime Kuma monitor statuses directly on the Unraid dashboard.
+  </Profile>
+  <WebPage>https://github.com/drohack</WebPage>
+  <Icon>https://raw.githubusercontent.com/drohack/Keeparr/main/public/icons/icon-192.png</Icon>
+</Profiles>

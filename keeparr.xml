@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>keeparr</Name>
+  <Repository>ghcr.io/drohack/keeparr:latest</Repository>
+  <Registry>https://ghcr.io/drohack/keeparr</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Icon>https://raw.githubusercontent.com/drohack/Keeparr/main/public/icons/icon-192.png</Icon>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <Overview>
+Keeparr helps everyone on your media server decide what's worth KEEPING — and reports what can safely be deleted to reclaim space.
+
+Every user with access to your Plex (or Jellyfin/Emby) server signs in and lands on a "For You"-style Keep feed — a screenful of titles dealt at a time, weighted toward the biggest space-hogs, so everyone can chip away at a few decisions whenever they have a minute instead of facing the whole library at once. For each title: keep, "I don't care", or — for things they requested via Seerr — "OK to delete" (the requester signing off). Keeps are protective: if anyone keeps a title, it's safe. The Big Picture dashboard shows what's reclaimable, what nobody has watched, and per-quality storage breakdowns.
+
+Unlike rule-based cleanup tools (e.g. Maintainerr), Keeparr NEVER deletes anything — it crowdsources the human decisions and gives you the report; you delete in your media server or Sonarr/Radarr. Integrates (all optional): Tautulli watch history, Overseerr/Jellyseerr requests, and any number of Sonarr/Radarr instances for quality/tag data and match health.
+
+First user to sign in becomes the admin. No required setup beyond the port and appdata path — secrets are auto-generated on first start.
+  </Overview>
+  <Support>https://forums.unraid.net/topic/199756-keeparr-decide-what-media-to-keep-together/</Support>
+  <Project>https://github.com/drohack/Keeparr</Project>
+  <TemplateURL>https://raw.githubusercontent.com/drohack/unraid-templates/main/keeparr.xml</TemplateURL>
+  <ReadMe>https://github.com/drohack/Keeparr#readme</ReadMe>
+  <Category>MediaApp:Video Tools:Utilities</Category>
+  <ExtraSearchTerms>plex jellyfin emby cleanup reclaim keep delete maintainerr overseerr sonarr radarr</ExtraSearchTerms>
+  <Config Name="WebUI Port" Target="3000" Default="8767" Mode="tcp" Description="Host port for the Keeparr web UI." Type="Port" Display="always" Required="true" Mask="false">8767</Config>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/keeparr" Mode="rw" Description="Keeparr's database, poster cache and backups." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/keeparr</Config>
+  <Config Name="SESSION_SECRET" Target="SESSION_SECRET" Default="" Description="Optional — leave EMPTY and Keeparr auto-generates a secret on first start (stored in appdata as .session-secret). Set it only to manage the secret yourself; never change it once in use — it encrypts your stored Plex/Tautulli/Seerr/Sonarr/Radarr tokens." Type="Variable" Display="advanced" Required="false" Mask="true"/>
+  <Config Name="APP_URL" Target="APP_URL" Default="" Description="Optional. Public URL of this app (e.g. https://keeparr.example.net) — used for the Plex sign-in redirect when behind a reverse proxy." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Media (optional, read-only)" Target="/media" Default="" Mode="ro" Description="Optional. Mount a media share read-only so Keeparr can show array capacity / free space (map libraries to paths in Settings &#8594; Connections). Add more paths for more shares." Type="Path" Display="advanced" Required="false" Mask="false"/>
+</Container>
