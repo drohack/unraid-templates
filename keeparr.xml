@@ -11,11 +11,20 @@
   <Overview>
 Keeparr helps everyone on your media server decide what's worth KEEPING — and reports what can safely be deleted to reclaim space.
 
-Every user with access to your Plex (or Jellyfin/Emby) server signs in and lands on a "For You"-style Keep feed — a screenful of titles dealt at a time, weighted toward the biggest space-hogs, so everyone can chip away at a few decisions whenever they have a minute instead of facing the whole library at once. For each title: keep, "I don't care", or — for things they requested via Seerr — "OK to delete" (the requester signing off). Keeps are protective: if anyone keeps a title, it's safe. The Big Picture dashboard shows what's reclaimable, what nobody has watched, and per-quality storage breakdowns.
+HOW IT WORKS
+• Everyone on your Plex (or Jellyfin/Emby) server signs in and gets a "For You"-style Keep feed — a screenful of titles at a time, weighted toward the biggest space-hogs, so decisions happen a few at a time instead of all at once.
+• For each title: Keep, "I don't care", or — for titles they requested via Seerr — "OK to delete" (the requester signing off).
+• Keeps are protective: if anyone keeps a title, it's safe.
+• The Big Picture dashboard shows what's reclaimable, what nobody has watched, and per-quality storage breakdowns.
 
-Unlike rule-based cleanup tools (e.g. Maintainerr), Keeparr NEVER deletes anything — it crowdsources the human decisions and gives you the report; you delete in your media server or Sonarr/Radarr. Integrates (all optional): Tautulli watch history, Overseerr/Jellyseerr requests, and any number of Sonarr/Radarr instances for quality/tag data and match health.
+NOTHING GETS DELETED
+Unlike rule-based cleanup tools (e.g. Maintainerr), Keeparr never deletes anything — it crowdsources the human decisions and hands you the report; you delete in your media server or Sonarr/Radarr.
 
-First user to sign in becomes the admin. No required setup beyond the port and appdata path — secrets are auto-generated on first start. Tip: complete first-run setup (choosing your server + first admin login) on your trusted LAN before exposing Keeparr to the internet, since the first account to sign in claims admin.
+INTEGRATIONS (ALL OPTIONAL)
+Tautulli watch history, Overseerr/Jellyseerr requests, and any number of Sonarr/Radarr instances for quality/tag data and match health.
+
+SETUP
+No required config beyond the port and appdata path — secrets are auto-generated on first start. The first user to sign in becomes the admin, so complete first-run setup on your trusted LAN before exposing Keeparr to the internet.
   </Overview>
   <Support>https://forums.unraid.net/topic/199756-keeparr-decide-what-media-to-keep-together/</Support>
   <Project>https://github.com/drohack/Keeparr</Project>

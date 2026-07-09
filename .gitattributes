@@ -1,0 +1,2 @@
+# Keep repo files LF everywhere so Windows editors can't introduce CRLF churn
+* text=auto eol=lf
