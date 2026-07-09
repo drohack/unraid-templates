@@ -6,15 +6,15 @@
 <Category>Tools:</Category>
 <Name>Uptime Kuma Dashboard Widget</Name>
 <Description>
-Displays Uptime Kuma monitor statuses directly on the Unraid dashboard with heartbeat bars, uptime percentages, and configurable time periods (1h to 180 days). Requires Uptime Kuma running as a Docker container on the same Unraid server (remote instances not supported). Reads the SQLite database in read-only mode - no API keys or background services needed. Choose which monitors to display, quick link to Uptime Kuma WebUI, and native Unraid dashboard tile styling. Supports both Uptime Kuma v1.x and v2.x (auto-detected).
+Displays Uptime Kuma monitor statuses directly on the Unraid dashboard with heartbeat bars, uptime percentages, and configurable time periods (1h to 180 days). Requires Uptime Kuma running as a Docker container on the same Unraid server (remote instances not supported). Select your Uptime Kuma data folder with the built-in file picker and the database type is detected automatically - SQLite and MariaDB (including v2's recommended embedded MariaDB) are supported, read-only, no API keys or background services needed. Choose which monitors to display, quick link to Uptime Kuma WebUI, and native Unraid dashboard tile styling. Supports both Uptime Kuma v1.x and v2.x (auto-detected).
 </Description>
 <Overview>
-Displays Uptime Kuma monitor statuses directly on the Unraid dashboard with heartbeat bars, uptime percentages, and configurable time periods. Requires Uptime Kuma as a local Docker container. Supports v1.x and v2.x.
+Displays Uptime Kuma monitor statuses directly on the Unraid dashboard with heartbeat bars, uptime percentages, and configurable time periods. Requires Uptime Kuma as a local Docker container. Supports v1.x and v2.x, SQLite and MariaDB (embedded or external).
 </Overview>
 <Support>https://forums.unraid.net/topic/198044-plugin-uptime-kuma-monitor-widget-for-unraid-dashboard/</Support>
 <Project>https://github.com/drohack/UptimeKumaPlugin</Project>
 <Icon>https://raw.githubusercontent.com/drohack/UptimeKumaPlugin/main/src/uptime-kuma/usr/local/emhttp/plugins/uptime-kuma/images/icon.svg</Icon>
 <IconFA>heartbeat</IconFA>
 <License>MIT</License>
-<MinVer>6.11.0</MinVer>
+<MinVer>6.12.0</MinVer>
 </Containers>
